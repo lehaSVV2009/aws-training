@@ -21,14 +21,14 @@
 | T2 Unlimited | - |
  
 ### Add Storage
- 
-| Root | /dev/xvda | 30GB | ...
+
+Root - /dev/xvda - 30GB - ...
 
 ### Add Tags
 
 It is not possible to assign name to instance from the scratch. But it is possible to tag them.
 
-*Alex*
+*e.g. `Alex`*
 
 ### Configure Security Group
 
@@ -58,7 +58,7 @@ You can name it somehow.
 
 | Name | Instance ID | Instance Type | Availability Zone | Instance State | Status Checks | Alarm Status | Public DNS (IPV4) | IPv4 Public IP | Security Groups
 |------|-------------|---------------|-------------------|----------------|---------------|--------------|-------------------|----------------|----------------
-| alex | i-09...     | t2.micro      | eu-central-1b     | running        |               |              | ...               | ...            | .. (link to group)
+| alex | i-09...     | t2.micro      | eu-central-1b     | running        |               |              | ...               | ...            | (link to group)
 
 Below you can see:
 * Public IP
@@ -115,9 +115,9 @@ If you want to add new volume, there is a `Elastic Block Store` tab in EC2 bar.
 
 Volumes:
 
-| Name | Volume ID | Size | Volume Type | ..
-|------|-----------|------|-------------| ..
-| -    | vol-..    | 100  | gp2         | ..
+| Name | Volume ID | Size | Volume Type 
+|------|-----------|------|-------------
+| -    | vol-..    | 100  | gp2         
 
 
 2. Click `Attach volume`
@@ -161,4 +161,4 @@ If `data`, then it's ok, the disk is empty
 
 *Snapshots contains difference, just like git. So do not delete old snapshots*
 
-*You pay for usage + read/writing*
+*You pay for usage + read/write*

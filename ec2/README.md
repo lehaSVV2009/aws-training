@@ -17,7 +17,7 @@
 | Shutdown behavior | Stop | `Stop` vs `Terminate`. Terminate will delete instance. Stop can be rerun.
 | Enable termination protection | - | Additional popup
 | Monitoring | - | Monitor CPU/memory/instance types/.. Requires additional charges
-| Tenancy | Shared | `Shared` vs `Dedicated` vs `Dedicated host`. Should you machine be dedicated physical machine or just virtual machine?
+| Tenancy | Shared | `Shared` vs `Dedicated` vs `Dedicated host`. Should your machine be dedicated physical machine or just virtual machine?
 | T2 Unlimited | - |
  
 ### Add Storage
@@ -32,12 +32,14 @@ It is not possible to assign name to instance from the scratch. But it is possib
 
 ### Configure Security Group
 
+| Key | Value | Notes
+|-----|-------|-------
 | Assign a security group | `Create a new security group` | You can use existing security groups
 | Security group name | http-and-ssh | any names
 
 | Type | Protocol | Port Range | Source | Description
-|------|----------|------------|-|
-| SSH | TCP | 22 | Anywhere (or My IP or ...) | |
+|------|----------|------------|--------|------------
+| SSH | TCP | 22 | Anywhere (or My IP or ...) |
 | HTTP | TCP | 80 | Anywhere (...) |
 
 *It's a good practice to limit access by IP.*
@@ -55,8 +57,8 @@ Click `Launch` and wait around 2-3 minutes.
 You can name it somehow.
 
 | Name | Instance ID | Instance Type | Availability Zone | Instance State | Status Checks | Alarm Status | Public DNS (IPV4) | IPv4 Public IP | Security Groups
-|------|-------------|---------------|-------------------|----------------|---------------|--------------|-------------------|-----
-| alex | i-09...     | t2.micro      | eu-central-1b     | 
+|------|-------------|---------------|-------------------|----------------|---------------|--------------|-------------------|----------------|----------------
+| alex | i-09...     | t2.micro      | eu-central-1b     | running        |               |              | ...               | ...            | .. (link to group)
 
 Below you can see:
 * Public IP
@@ -114,12 +116,14 @@ If you want to add new volume, there is a `Elastic Block Store` tab in EC2 bar.
 Volumes:
 
 | Name | Volume ID | Size | Volume Type | ..
-|  | vol-.. | 100 | gp2 | ..
+|------|-----------|------|-------------| ..
+| -    | vol-..    | 100  | gp2         | ..
 
 
 2. Click `Attach volume`
 
 | Key | Value
+|-----|------
 | Volume | vol-...
 | Instance | i-..(alex)
 

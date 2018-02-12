@@ -1,8 +1,14 @@
 # Elastic Compute Cloud (EC2)
 
+```
+Host server > Hypervisor > Guest 1 | Guest 2 | Guest n
+```
+
 ### AMI
 
-...TODO add initial info
+Amazon Machine Image
+
+It is an image with special requirements and special tools inside (Amazon Linux, Red Hat Linux, Windows 10, etc.)
 
 ### Configure Instance Details
 
@@ -84,7 +90,7 @@ yum, java, python, ruby, ...
 You pay for seconds of running instance.
 *t2.micro - 0.0116 per hour*
 
-### Instance Storage - Elastic Block Store (EBS)
+## Instance Storage - Elastic Block Store (EBS)
 
 It is a network drive located in a special dedicated server.
 

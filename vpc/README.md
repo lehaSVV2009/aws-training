@@ -1,5 +1,7 @@
 # Virtual Private Cloud (VPC)
 
+Many configured instances with different sets of IP addresses :smile:
+
 Isolated part of AWS cloud, 
 
 Allows:
@@ -51,15 +53,17 @@ VPC:
 
 * Free
 * Associated with AWS
-* Only 5 elastic IP-s in zone
+* Only `5 elastic IP-s` in zone
 * Can be reassigned to another instance
 * Small price if more IP-s required
 
+*`192.168...` are usually used cause of no conflicts with Internet*
+
 ## Router and route table
 
-* VPC with one public network
+* VPC with one public network in Availability Zone A
 * Size 256 addresses
-* Internet Gateway
+* Internet Gateway is configured in VPC
 
 Destination | Target
 ------------|-------
@@ -76,7 +80,9 @@ And internet gateway sends request to `google.com`
 
 ## VPC with Public Subnets
 
-[Public Subnet](public-subnet.png)
+Public subnet is a subnet with Internet Gateway which allows other internet users to ping public IP.
+
+[Public Subnet](/public-subnet.png)
 
 VPC Dashboard -> Start VPC Wizard
 
@@ -103,10 +109,13 @@ Create VPC
 
 ## VPC with Public and Private Subnets
 
-[Public and Private Subnets](private-and-public-subnets.png)
+[Public and Private Subnets](/vpc/private-and-public-subnets.png)
 
 Public network - with internet gateway 
 Private - with NAT gateway
+
+NAT gateway is located in Public network and link to NAT is stored in Private subnet.
+Access to Internet is done from Public network.
 
 ## 1. Select a VPC Configuration
 

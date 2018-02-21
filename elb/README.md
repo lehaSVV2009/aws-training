@@ -167,3 +167,4 @@ It will automatically create instance in a special target group
 
 * How to automatically deploy docker image to AWS AMI and update all instances?
 
+Use `Elastic Container Service`. It will do magic for you. Or `Elastic Kubernetes Service` :smile:

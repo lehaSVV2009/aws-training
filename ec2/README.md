@@ -168,3 +168,17 @@ If `data`, then it's ok, the disk is empty
 *Snapshots contains difference, just like git. So do not delete old snapshots*
 
 *You pay for usage + read/write*
+
+## Amazon Lightsail
+
+There is an analogue of EC2 with simple configurations
+
+It has nice UI. Prices equal to Digital Ocean machines.
+
+*One month free*
+
+* You can create snapshots
+* You can add storage
+* You can add load balancers
+
+Note - they can go to S3 or smth like that.

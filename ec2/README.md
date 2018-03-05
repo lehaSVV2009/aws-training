@@ -80,7 +80,7 @@ Below you can see:
 
 1. Click `Connect`
 2. Locally `chmod 400 you_perm_key.pem`
-3. Locally `ssh -i "you_perm_key.pem" ec2-user@ec2-18-...compute.amazonaws.com`
+3. Locally `ssh -i "you_perm_key.pem" ec2-user@ec2-...compute.amazonaws.com`
 
 Amazon AMI contains:
 yum, java, python, ruby, ...
@@ -94,9 +94,10 @@ You pay for seconds of running instance.
 
 It is a network drive located in a special dedicated server.
 
-EBS has ~125MB per sec, but depends on instance.
+`Instance Volume` (separated SSD) vs `EBS Volume + EBS Volume Snapshot` (virtual block storage) vs `EFS (elastic file system)` (file system storage).
 
-SSD is good for cache, it will be clear after usage
+* EBS has ~125MB per sec, but depends on instance.
+* SSD is good for cache, it will be clear after usage
 
 *0.1$ per GB + replication*
 *0.1-0.2% AFR*

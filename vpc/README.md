@@ -82,7 +82,7 @@ And internet gateway sends request to `google.com`
 
 Public subnet is a subnet with Internet Gateway which allows other internet users to ping public IP.
 
-[Public Subnet](/public-subnet.png)
+[Public Subnet](/vpc/public-subnet.png)
 
 VPC Dashboard -> Start VPC Wizard
 

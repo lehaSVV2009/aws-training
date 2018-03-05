@@ -2,9 +2,10 @@
 
 Service to manage access to AWS resource.
 
-* Add Users
 * Every user has access rights
-* 
+* Users/Groups/Permissions/Roles
+* Reliability
+* Free
 
 ## Users
 

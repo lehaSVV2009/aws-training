@@ -30,3 +30,17 @@ Secured and reliable service for data archiving
 * 0.004 USD per month for GB
 * It is not fast
 * Price depends on chosen method (from 5 minutes to several days)
+
+## Elastic Transcode Service
+
+Service for video transcoding.
+
+When the video is uploaded, video format/coding is usually unknown.
+ETS allows to customize video params (codec/ratio/sizing/...) to be normally shown.
+
+It has integration with Simple Notification Service.
+e.g. `On Error Event -> use SNS topic`
+
+## Amazon MQ
+
+Managed message broker service for Apache ActiveMQ. (ActiveMQ in Cloud).

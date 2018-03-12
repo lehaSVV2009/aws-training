@@ -2,6 +2,8 @@
 
 Analogue of [Mail chimp](https://mailchimp.com/)
 
+Use when your EC2 instance is failed.
+
 ## SNS Dashboard
 
 ### Create topic

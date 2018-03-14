@@ -1,4 +1,4 @@
-# Simple Queue Service
+# Simple Queue Service (SQS)
 
 FIFO: `5 -> 4 -> 3 -> 2 -> 1`. Good and slow. Limit to 300 transaction per second.
 Regular: `4 -> 3 -> 3 -> 5 -> 2 -> 1`. Not perfect, possible duplicates, but fast.

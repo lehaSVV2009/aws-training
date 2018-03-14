@@ -1,4 +1,4 @@
-# Idendity and Access Management (IAM)
+# Identity and Access Management (IAM)
 
 Service to manage access to AWS resource.
 

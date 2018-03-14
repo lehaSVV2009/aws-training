@@ -44,3 +44,9 @@ e.g. `On Error Event -> use SNS topic`
 ## Amazon MQ
 
 Managed message broker service for Apache ActiveMQ. (ActiveMQ in Cloud).
+
+## API Gateway
+
+Your own API handled by UI.
+
+`Create new API/Import from swagger` -> `New Child Resource` -> `/users` -> `GEt` -> `Mock/Lambda/HTTP/...`

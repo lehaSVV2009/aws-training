@@ -82,7 +82,7 @@ And internet gateway sends request to `google.com`
 
 Public subnet is a subnet with Internet Gateway which allows other internet users to ping public IP.
 
-[Public Subnet](/vpc/public-subnet.png)
+![Public Subnet](/vpc/public-subnet.png)
 
 VPC Dashboard -> Start VPC Wizard
 
@@ -109,7 +109,7 @@ Create VPC
 
 ## VPC with Public and Private Subnets
 
-[Public and Private Subnets](/vpc/private-and-public-subnets.png)
+![Public and Private Subnets](/vpc/private-and-public-subnets.png)
 
 Public network - with internet gateway 
 Private - with NAT gateway
